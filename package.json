@@ -1,0 +1,11 @@
+{
+  "name": "bitcoin-scripts",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "run-bitcoin": "node src/bitcoin.js"
+  },
+  "dependencies": {
+    "bitcoinjs-lib": "^6.0.0"
+  }
+}
