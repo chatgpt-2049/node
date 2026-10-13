@@ -1,11 +1,18 @@
 {
-  "name": "bitcoin-scripts",
+  "name": "node-tx-tools",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "run-bitcoin": "node src/bitcoin.js"
+    "tx:clean": "node scripts/rawtransactionshex.mjs",
+    "tx:inspect": "node scripts/tx-inspect.mjs",
+    "tx:validate": "node scripts/tx-validate.mjs",
+    "tx:broadcast": "node scripts/tx-broadcast.mjs"
   },
   "dependencies": {
-    "bitcoinjs-lib": "^6.0.0"
+    "bitcoinjs-lib": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
